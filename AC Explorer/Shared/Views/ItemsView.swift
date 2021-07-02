@@ -31,7 +31,7 @@ struct ItemsView: View {
     }
     
     var body: some View {
-        if #available(iOS 15.0, macOS 12.0, *) {
+        if #available(iOS 15.0, *) {
             VStack(spacing: 8) {
                 Picker(selection: $selection, label: Text("Select filter")) {
                     ForEach(selectionOptions, id: \.self) {

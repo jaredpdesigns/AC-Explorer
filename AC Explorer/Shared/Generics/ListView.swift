@@ -15,7 +15,6 @@ struct ListView<Content: View>: View {
     }
     
     var body: some View {
-#if os(iOS)
         if UIDevice.current.userInterfaceIdiom == .pad {
             ScrollView {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 200))]) {
@@ -28,12 +27,5 @@ struct ListView<Content: View>: View {
             }
             .listStyle(.plain)
         }
-#else
-        ScrollView {
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: 200))]) {
-                content
-            }.padding()
-        }
-#endif
     }
 }

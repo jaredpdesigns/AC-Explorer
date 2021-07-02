@@ -18,7 +18,6 @@ struct DestinationView: View {
     @State var itemsQuery: [Query]?
     
     var body: some View {
-#if os(iOS)
         if UIDevice.current.userInterfaceIdiom == .pad {
             NavigationLink(destination: DetailView(image: image, imageSecondary: imageSecondary, title: title, subtitle: subtitle, subtitleImage: subtitleImage, quote: quote, variationsQuery: variationsQuery, itemsQuery: itemsQuery)) {
                 ListItem(image: image, title: title, subtitle: subtitle, subtitleImage: subtitleImage)
@@ -40,11 +39,6 @@ struct DestinationView: View {
                 }
             }
         }
-#else
-        NavigationLink(destination: DetailView(image: image, imageSecondary: imageSecondary, title: title, subtitle: subtitle, subtitleImage: subtitleImage, quote: quote, variationsQuery: variationsQuery, itemsQuery: itemsQuery)) {
-            ListItem(image: image, title: title, subtitle: subtitle, subtitleImage: subtitleImage)
-        }.buttonStyle(PlainButtonStyle())
-#endif
     }
 }
 

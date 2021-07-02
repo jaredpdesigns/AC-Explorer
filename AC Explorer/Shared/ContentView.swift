@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     @State private var selectedView: Int? = 1
     var body: some View {
-#if os(iOS)
         if UIDevice.current.userInterfaceIdiom == .pad {
             NavigationView {
                 Sidebar(selectedView: $selectedView)
@@ -20,13 +19,6 @@ struct ContentView: View {
         } else {
             TabBar()
         }
-#else
-        NavigationView {
-            Sidebar(selectedView: $selectedView)
-            VillagersView()
-        }
-        .navigationViewStyle(DoubleColumnNavigationViewStyle())
-#endif
     }
 }
 

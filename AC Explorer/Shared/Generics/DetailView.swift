@@ -48,7 +48,6 @@ struct DetailView: View {
                             }.opacity(0.5)
                         }
                         if quote != nil {
-#if os(iOS)
                             VStack {
                                 Text("”\(quote!)“")
                                     .fontWeight(.semibold)
@@ -57,18 +56,8 @@ struct DetailView: View {
                             .frame(maxWidth: 480)
                             .clipShape(RoundedRectangle(cornerRadius: 16))
                             .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color(UIColor.systemFill), lineWidth: 4).opacity(0.25))
-#else
-                            VStack {
-                                Text("”\(quote!)“")
-                                    .fontWeight(.semibold)
-                            }
-                            .padding()
-                            .frame(maxWidth: 480)
-                            .clipShape(RoundedRectangle(cornerRadius: 16))
-#endif
                         }
                     }
-#if os(iOS)
                     if UIDevice.current.userInterfaceIdiom == .pad {
                         LazyVGrid(columns: [GridItem(.adaptive(minimum: 200))]) {
                             ForEach(variationsHolder, id: \.self) { item in
@@ -86,16 +75,6 @@ struct DetailView: View {
                             ExtraItem(image: item.response.image_url, title: item.label, subtitle: item.response.name)
                         }
                     }
-#else
-                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 200))]) {
-                        ForEach(variationsHolder, id: \.self) { item in
-                            ExtraItem(image: item.response.variations[0].image_url, title: item.label, subtitle: item.response.name)
-                        }
-                        ForEach(itemsHolder, id: \.self) { item in
-                            ExtraItem(image: item.response.image_url, title: item.label, subtitle: item.response.name)
-                        }
-                    }
-#endif
                     Spacer()
                 }
                 .padding()

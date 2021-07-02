@@ -276,12 +276,11 @@ var AnimalDummy = [
 ]
 
 var VillagerDummy = [
-    Villager(birthday_month: "February", birthday_day: "13", id: "flg01", image_url: "https://dodo.ac/np/images/9/94/Ribbot_NH.png", name: "Ribbot", title_color: "bfbfbf", text_color: "5e5e5e", quote: "Never rest, never rust.", nh_details: NHDetails(clothing: "Simple Parka", clothing_variation: "Light Blue", house_exterior_url: "https://dodo.ac/np/images/4/42/House_of_Ribbot_NH_Model.png", house_wallpaper: "Circuit-Board Wall", house_flooring: "Future-Tech Flooring"))
+    Villager(birthday_month: "February", birthday_day: "22", id: "flg01", image_url: "https://dodo.ac/np/images/d/dd/Avery_NH.png", name: "Avery", title_color: "c0ab72", text_color: "fffce9", quote: "What goes around comes around.", nh_details: NHDetails(clothing: "Oversized Shawl Overshirt", clothing_variation: "Light Blue", house_exterior_url: "https://dodo.ac/np/images/c/cf/House_of_Avery_NH_Model.png", house_wallpaper: "Western Vista", house_flooring: "Rocky-Mountain Flooring"))
 ]
 
 // Color extension
 
-#if os(iOS)
 extension UIColor {
     convenience init?(hexString: String?) {
         let input: String! = (hexString ?? "")
@@ -330,4 +329,3 @@ extension UIColor {
         return CGFloat(Double(hexComponent) / 255.0)
     }
 }
-#endif

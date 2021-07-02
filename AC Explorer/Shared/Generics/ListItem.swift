@@ -14,7 +14,6 @@ struct ListItem: View {
     let subtitleImage: String
     
     var body: some View {
-#if os(iOS)
         if UIDevice.current.userInterfaceIdiom == .pad {
             VStack(spacing: 16) {
                 ImageLoader(url: image, size: 128)
@@ -53,23 +52,6 @@ struct ListItem: View {
             .padding()
             .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color(UIColor.systemFill), lineWidth: 4).opacity(0.25))
         }
-#else
-        VStack(spacing: 16) {
-            ImageLoader(url: image, size: 128)
-            VStack(spacing: 8) {
-                Text(title)
-                    .font(.headline)
-                    .fontWeight(.bold)
-                HStack {
-                    Image(systemName: subtitleImage)
-                        .imageScale(.small)
-                    Text(subtitle)
-                }.opacity(0.5)
-            }.frame(maxWidth: .infinity)
-        }
-        .padding()
-        .frame(maxWidth: .infinity)
-#endif
     }
 }
 

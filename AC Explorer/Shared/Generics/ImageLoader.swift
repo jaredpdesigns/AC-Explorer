@@ -12,7 +12,7 @@ struct ImageLoader: View {
     @State var size: CGFloat
     
     var body: some View {
-        if #available(iOS 15.0, macOS 12.0, *) {
+        if #available(iOS 15.0, *) {
             AsyncImage(url: URL(string: url)) { image in
                 image
                     .resizable()
@@ -24,7 +24,6 @@ struct ImageLoader: View {
                 }.frame(width: size, height: size)
             }
         } else {
-#if os(iOS)
             if let url = URL(string: url), let imageData = try? Data(contentsOf: url),
                let uiImage = UIImage(data: imageData) {
                 Image(uiImage: uiImage)
@@ -32,7 +31,6 @@ struct ImageLoader: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width:96, height: 96)
             }
-#endif
         }
     }
 }

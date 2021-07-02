@@ -13,7 +13,6 @@ struct ExtraItem: View {
     let subtitle: String
     
     var body: some View {
-#if os(iOS)
         if UIDevice.current.userInterfaceIdiom == .pad {
             VStack() {
                 ImageLoader(url: image, size: 128)
@@ -46,20 +45,5 @@ struct ExtraItem: View {
             .clipShape(RoundedRectangle(cornerRadius: 16))
             .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color(UIColor.systemFill), lineWidth: 4).opacity(0.25))
         }
-#else
-        VStack() {
-            ImageLoader(url: image, size: 128)
-            VStack(spacing: 4) {
-                Text(title)
-                    .font(.headline)
-                    .fontWeight(.bold)
-                Text(subtitle)
-                    .opacity(0.5)
-            }
-        }
-        .padding()
-        .frame(width: 200)
-        .clipShape(RoundedRectangle(cornerRadius: 16))
-#endif
     }
 }

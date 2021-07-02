@@ -19,7 +19,7 @@ struct VillagersView: View {
         }
     }
     var body: some View {
-        if #available(iOS 15.0, macOS 12.0, *) {
+        if #available(iOS 15.0, *) {
             VStack {
                 if query != "" && searchResults.isEmpty {
                     Spacer()
