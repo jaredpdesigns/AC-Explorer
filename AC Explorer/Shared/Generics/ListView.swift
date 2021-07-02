@@ -25,7 +25,7 @@ struct ListView<Content: View>: View {
             List {
                 content
             }
-            .listStyle(.plain)
+            .listStyle(PlainListStyle())
         }
     }
 }

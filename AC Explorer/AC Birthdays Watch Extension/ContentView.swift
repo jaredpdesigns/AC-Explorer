@@ -30,7 +30,7 @@ struct ContentView: View {
                 }.frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
-        .navigationBarTitle("Birthdays")
+        .navigationBarTitle("AC Birthdays")
         .frame(maxHeight: .infinity)
         .onAppear {
             Api().getVillagersMonth(month: "\(month)"){(response) in

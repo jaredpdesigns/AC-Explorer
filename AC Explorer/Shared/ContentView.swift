@@ -14,8 +14,7 @@ struct ContentView: View {
             NavigationView {
                 Sidebar(selectedView: $selectedView)
                 VillagersView()
-            }
-            .navigationViewStyle(DoubleColumnNavigationViewStyle())
+            }.navigationViewStyle(DoubleColumnNavigationViewStyle())
         } else {
             TabBar()
         }

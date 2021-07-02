@@ -18,29 +18,33 @@ struct DestinationView: View {
     @State var itemsQuery: [Query]?
     @State var buy: Buy?
     
-    @State var showSheet = false
+    @State var isShowingSheet = false
+    
+    func didDismiss() {
+        self.isShowingSheet = false
+    }
     
     var body: some View {
         if UIDevice.current.userInterfaceIdiom == .pad {
             VStack {
-                ListItem(image: image, title: title, subtitle: subtitle, subtitleImage: subtitleImage).onTapGesture {
-                    showSheet.toggle()
-                }
+                ListItem(image: image, title: title, subtitle: subtitle, subtitleImage: subtitleImage)
+                    .onTapGesture {
+                        isShowingSheet.toggle()
+                    }
             }
-            .sheet(isPresented: $showSheet) {
+            .sheet(isPresented: $isShowingSheet, onDismiss: didDismiss) {
                 VStack {
                     HStack {
-                        VStack {
-                            Image(systemName: "xmark.circle.fill").onTapGesture {
-                                showSheet.toggle()
-                            }
-                            .opacity(0.25)
-                        }.padding()
+                        Button(action: { isShowingSheet.toggle() }) {
+                            Image(systemName: "xmark.circle.fill")
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                        .padding()
+                        .opacity(0.5)
                         Spacer()
                     }
                     DetailView(image: image, imageSecondary: imageSecondary, title: title, subtitle: subtitle, subtitleImage: subtitleImage, quote: quote, variationsQuery: variationsQuery, itemsQuery: itemsQuery, buy: buy)
                 }
-                
             }
         } else {
             if #available(iOS 15.0, *) {

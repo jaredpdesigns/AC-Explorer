@@ -27,11 +27,6 @@ struct DetailView: View {
                     ZStack {
                         if imageSecondary != nil {
                             ImageLoader(url: imageSecondary!, size: 200)
-                        } else {
-                            Color.accentColor
-                                .clipShape(Circle())
-                                .frame(width:200, height: 200)
-                                .opacity(0.125)
                         }
                         ImageLoader(url: image, size: 240)
                     }

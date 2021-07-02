@@ -10,38 +10,22 @@
 		BE1E8AD9268E85C400763E4A /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF65268E7F25007DBA55 /* Loader.swift */; };
 		BE1E8ADB268E86B400763E4A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E8ADA268E86B400763E4A /* ComplicationController.swift */; };
 		BEA9CF3D268E7DF2007DBA55 /* AC_ExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF2F268E7DF0007DBA55 /* AC_ExplorerApp.swift */; };
-		BEA9CF3E268E7DF2007DBA55 /* AC_ExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF2F268E7DF0007DBA55 /* AC_ExplorerApp.swift */; };
 		BEA9CF3F268E7DF2007DBA55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF30268E7DF0007DBA55 /* ContentView.swift */; };
-		BEA9CF40268E7DF2007DBA55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF30268E7DF0007DBA55 /* ContentView.swift */; };
 		BEA9CF41268E7DF2007DBA55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA9CF31268E7DF2007DBA55 /* Assets.xcassets */; };
-		BEA9CF42268E7DF2007DBA55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA9CF31268E7DF2007DBA55 /* Assets.xcassets */; };
 		BEA9CF54268E7EE6007DBA55 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF52268E7EE6007DBA55 /* TabBar.swift */; };
 		BEA9CF56268E7EE7007DBA55 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF53268E7EE6007DBA55 /* Sidebar.swift */; };
-		BEA9CF57268E7EE7007DBA55 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF53268E7EE6007DBA55 /* Sidebar.swift */; };
 		BEA9CF66268E7F25007DBA55 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF58268E7F25007DBA55 /* Data.swift */; };
-		BEA9CF67268E7F25007DBA55 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF58268E7F25007DBA55 /* Data.swift */; };
 		BEA9CF68268E7F25007DBA55 /* VillagersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5A268E7F25007DBA55 /* VillagersView.swift */; };
-		BEA9CF69268E7F25007DBA55 /* VillagersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5A268E7F25007DBA55 /* VillagersView.swift */; };
 		BEA9CF6A268E7F25007DBA55 /* ClothingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5B268E7F25007DBA55 /* ClothingView.swift */; };
-		BEA9CF6B268E7F25007DBA55 /* ClothingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5B268E7F25007DBA55 /* ClothingView.swift */; };
 		BEA9CF6C268E7F25007DBA55 /* AnimalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5C268E7F25007DBA55 /* AnimalsView.swift */; };
-		BEA9CF6D268E7F25007DBA55 /* AnimalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5C268E7F25007DBA55 /* AnimalsView.swift */; };
 		BEA9CF6E268E7F25007DBA55 /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5D268E7F25007DBA55 /* ItemsView.swift */; };
-		BEA9CF6F268E7F25007DBA55 /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5D268E7F25007DBA55 /* ItemsView.swift */; };
 		BEA9CF70268E7F25007DBA55 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5F268E7F25007DBA55 /* ListItem.swift */; };
-		BEA9CF71268E7F25007DBA55 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5F268E7F25007DBA55 /* ListItem.swift */; };
 		BEA9CF72268E7F25007DBA55 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF60268E7F25007DBA55 /* DetailView.swift */; };
-		BEA9CF73268E7F25007DBA55 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF60268E7F25007DBA55 /* DetailView.swift */; };
 		BEA9CF74268E7F25007DBA55 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF61268E7F25007DBA55 /* ImageLoader.swift */; };
-		BEA9CF75268E7F25007DBA55 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF61268E7F25007DBA55 /* ImageLoader.swift */; };
 		BEA9CF76268E7F25007DBA55 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF62268E7F25007DBA55 /* ListView.swift */; };
-		BEA9CF77268E7F25007DBA55 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF62268E7F25007DBA55 /* ListView.swift */; };
 		BEA9CF78268E7F25007DBA55 /* ExtraItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF63268E7F25007DBA55 /* ExtraItem.swift */; };
-		BEA9CF79268E7F25007DBA55 /* ExtraItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF63268E7F25007DBA55 /* ExtraItem.swift */; };
 		BEA9CF7A268E7F25007DBA55 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF64268E7F25007DBA55 /* DestinationView.swift */; };
-		BEA9CF7B268E7F25007DBA55 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF64268E7F25007DBA55 /* DestinationView.swift */; };
 		BEA9CF7C268E7F25007DBA55 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF65268E7F25007DBA55 /* Loader.swift */; };
-		BEA9CF7D268E7F25007DBA55 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF65268E7F25007DBA55 /* Loader.swift */; };
 		BEA9CFA0268E8344007DBA55 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9CF9F268E8344007DBA55 /* WidgetKit.framework */; platformFilter = maccatalyst; };
 		BEA9CFA2268E8344007DBA55 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9CFA1268E8344007DBA55 /* SwiftUI.framework */; platformFilter = maccatalyst; };
 		BEA9CFA5268E8344007DBA55 /* AC_Birthdays.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CFA4268E8344007DBA55 /* AC_Birthdays.swift */; };
@@ -61,6 +45,7 @@
 		BEA9CFE4268E851E007DBA55 /* VillagerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CFE3268E851E007DBA55 /* VillagerDetail.swift */; };
 		BEA9CFE5268E853F007DBA55 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF58268E7F25007DBA55 /* Data.swift */; };
 		BEA9CFE6268E8562007DBA55 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF61268E7F25007DBA55 /* ImageLoader.swift */; };
+		BEBACBB8268FD39A007A91C3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEBACBB7268FD39A007A91C3 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,7 +114,6 @@
 		BEA9CF30268E7DF0007DBA55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BEA9CF31268E7DF2007DBA55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEA9CF36268E7DF2007DBA55 /* AC Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEA9CF3C268E7DF2007DBA55 /* AC Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA9CF52268E7EE6007DBA55 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		BEA9CF53268E7EE6007DBA55 /* Sidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		BEA9CF58268E7F25007DBA55 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -161,17 +145,12 @@
 		BEA9CFD5268E84B1007DBA55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BEA9CFD7268E84B1007DBA55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEA9CFE3268E851E007DBA55 /* VillagerDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VillagerDetail.swift; sourceTree = "<group>"; };
+		BEBACBB6268FCB90007A91C3 /* AC-Explorer--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AC-Explorer--iOS--Info.plist"; sourceTree = "<group>"; };
+		BEBACBB7268FD39A007A91C3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BEA9CF33268E7DF2007DBA55 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEA9CF39268E7DF2007DBA55 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,6 +179,7 @@
 		BEA9CF29268E7DF0007DBA55 = {
 			isa = PBXGroup;
 			children = (
+				BEBACBB6268FCB90007A91C3 /* AC-Explorer--iOS--Info.plist */,
 				BEA9CF2E268E7DF0007DBA55 /* Shared */,
 				BEA9CFA3268E8344007DBA55 /* AC Birthdays */,
 				BEA9CFC0268E84AE007DBA55 /* AC Birthdays Watch */,
@@ -214,6 +194,7 @@
 			children = (
 				BEA9CF2F268E7DF0007DBA55 /* AC_ExplorerApp.swift */,
 				BEA9CF30268E7DF0007DBA55 /* ContentView.swift */,
+				BEBACBB7268FD39A007A91C3 /* Launch Screen.storyboard */,
 				BEA9CF58268E7F25007DBA55 /* Data.swift */,
 				BEA9CF5E268E7F25007DBA55 /* Generics */,
 				BEA9CF59268E7F25007DBA55 /* Views */,
@@ -227,7 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				BEA9CF36268E7DF2007DBA55 /* AC Explorer.app */,
-				BEA9CF3C268E7DF2007DBA55 /* AC Explorer.app */,
 				BEA9CF9D268E8344007DBA55 /* AC BirthdaysExtension.appex */,
 				BEA9CFBF268E84AE007DBA55 /* AC Birthdays Watch.app */,
 				BEA9CFC7268E84B0007DBA55 /* AC Birthdays Watch Extension.appex */,
@@ -352,23 +332,6 @@
 			productReference = BEA9CF36268E7DF2007DBA55 /* AC Explorer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BEA9CF3B268E7DF2007DBA55 /* AC Explorer (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BEA9CF48268E7DF2007DBA55 /* Build configuration list for PBXNativeTarget "AC Explorer (macOS)" */;
-			buildPhases = (
-				BEA9CF38268E7DF2007DBA55 /* Sources */,
-				BEA9CF39268E7DF2007DBA55 /* Frameworks */,
-				BEA9CF3A268E7DF2007DBA55 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "AC Explorer (macOS)";
-			productName = "AC Explorer (macOS)";
-			productReference = BEA9CF3C268E7DF2007DBA55 /* AC Explorer.app */;
-			productType = "com.apple.product-type.application";
-		};
 		BEA9CF9C268E8344007DBA55 /* AC BirthdaysExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEA9CFAC268E8346007DBA55 /* Build configuration list for PBXNativeTarget "AC BirthdaysExtension" */;
@@ -433,9 +396,6 @@
 					BEA9CF35268E7DF2007DBA55 = {
 						CreatedOnToolsVersion = 13.0;
 					};
-					BEA9CF3B268E7DF2007DBA55 = {
-						CreatedOnToolsVersion = 13.0;
-					};
 					BEA9CF9C268E8344007DBA55 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -461,7 +421,6 @@
 			projectRoot = "";
 			targets = (
 				BEA9CF35268E7DF2007DBA55 /* AC Explorer (iOS) */,
-				BEA9CF3B268E7DF2007DBA55 /* AC Explorer (macOS) */,
 				BEA9CF9C268E8344007DBA55 /* AC BirthdaysExtension */,
 				BEA9CFBE268E84AE007DBA55 /* AC Birthdays Watch */,
 				BEA9CFC6268E84B0007DBA55 /* AC Birthdays Watch Extension */,
@@ -474,15 +433,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEBACBB8268FD39A007A91C3 /* Launch Screen.storyboard in Resources */,
 				BEA9CF41268E7DF2007DBA55 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEA9CF3A268E7DF2007DBA55 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BEA9CF42268E7DF2007DBA55 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,28 +485,6 @@
 				BEA9CF3D268E7DF2007DBA55 /* AC_ExplorerApp.swift in Sources */,
 				BEA9CF7C268E7F25007DBA55 /* Loader.swift in Sources */,
 				BEA9CF6A268E7F25007DBA55 /* ClothingView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEA9CF38268E7DF2007DBA55 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BEA9CF71268E7F25007DBA55 /* ListItem.swift in Sources */,
-				BEA9CF79268E7F25007DBA55 /* ExtraItem.swift in Sources */,
-				BEA9CF77268E7F25007DBA55 /* ListView.swift in Sources */,
-				BEA9CF75268E7F25007DBA55 /* ImageLoader.swift in Sources */,
-				BEA9CF6F268E7F25007DBA55 /* ItemsView.swift in Sources */,
-				BEA9CF67268E7F25007DBA55 /* Data.swift in Sources */,
-				BEA9CF40268E7DF2007DBA55 /* ContentView.swift in Sources */,
-				BEA9CF73268E7F25007DBA55 /* DetailView.swift in Sources */,
-				BEA9CF57268E7EE7007DBA55 /* Sidebar.swift in Sources */,
-				BEA9CF6D268E7F25007DBA55 /* AnimalsView.swift in Sources */,
-				BEA9CF69268E7F25007DBA55 /* VillagersView.swift in Sources */,
-				BEA9CF7B268E7F25007DBA55 /* DestinationView.swift in Sources */,
-				BEA9CF3E268E7DF2007DBA55 /* AC_ExplorerApp.swift in Sources */,
-				BEA9CF7D268E7F25007DBA55 /* Loader.swift in Sources */,
-				BEA9CF6B268E7F25007DBA55 /* ClothingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,14 +653,20 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AC-Explorer--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = "AC Explorer";
+				INFOPLIST_KEY_CFBundleName = "AC Explorer";
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -754,14 +690,20 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AC-Explorer--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = "AC Explorer";
+				INFOPLIST_KEY_CFBundleName = "AC Explorer";
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -777,64 +719,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		BEA9CF49268E7DF2007DBA55 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jaredpdesigns.AC-Explorer";
-				PRODUCT_NAME = "AC Explorer";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		BEA9CF4A268E7DF2007DBA55 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jaredpdesigns.AC-Explorer";
-				PRODUCT_NAME = "AC Explorer";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1026,15 +910,6 @@
 			buildConfigurations = (
 				BEA9CF46268E7DF2007DBA55 /* Debug */,
 				BEA9CF47268E7DF2007DBA55 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BEA9CF48268E7DF2007DBA55 /* Build configuration list for PBXNativeTarget "AC Explorer (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BEA9CF49268E7DF2007DBA55 /* Debug */,
-				BEA9CF4A268E7DF2007DBA55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
