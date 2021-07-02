@@ -64,7 +64,7 @@ struct AnimalsView: View {
                         } else {
                             ListView {
                                 ForEach(searchResultsBugs, id: \.self) { item in
-                                    DestinationView(image: item.render_url, title: item.name, subtitle: item.location!, subtitleImage: "location.fill", quote: item.catchphrases[0])
+                                    DestinationView(image: item.render_url, title: item.name, subtitle: item.location!, subtitleImage: "mappin.and.ellipse", quote: item.catchphrases[0])
                                 }
                             }
                         }
@@ -85,7 +85,7 @@ struct AnimalsView: View {
                         } else {
                             ListView {
                                 ForEach(searchResultsFish, id: \.self) { item in
-                                    DestinationView(image: item.render_url, title: item.name, subtitle: item.location!, subtitleImage: "location.fill", quote: item.catchphrases[0])
+                                    DestinationView(image: item.render_url, title: item.name, subtitle: item.location!, subtitleImage: "mappin.and.ellipse", quote: item.catchphrases[0])
                                 }
                             }
                         }
@@ -126,21 +126,9 @@ struct AnimalsView: View {
                 }
             }
             .searchable(text: $query, prompt: "Search…") {
-                if query != "" {
-                    if selection == "Bugs" {
-                        ForEach(searchResultsBugs, id: \.self) { result in
-                            Text("\(result.name)?").searchCompletion(result.name)
-                        }
-                    }
-                    if selection == "Fish" {
-                        ForEach(searchResultsFish, id: \.self) { result in
-                            Text("\(result.name)?").searchCompletion(result.name)
-                        }
-                    }
-                    if selection == "Sea Creatures" {
-                        ForEach(searchResultsSeaCreatures, id: \.self) { result in
-                            Text("\(result.name)?").searchCompletion(result.name)
-                        }
+                if query != "" && UIDevice.current.userInterfaceIdiom == .phone {
+                    ForEach(searchResultsBugs + searchResultsFish + searchResultsSeaCreatures, id: \.self) { result in
+                        Text("Looking for **\(result.name)**?").searchCompletion(result.name)
                     }
                 }
             }

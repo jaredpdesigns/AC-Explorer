@@ -49,9 +49,9 @@ struct VillagersView: View {
                 }
             }
             .searchable(text: $query, prompt: "Search…") {
-                if query != "" {
+                if query != "" && UIDevice.current.userInterfaceIdiom == .phone {
                     ForEach(searchResults) { result in
-                        Text("\(result.name)?").searchCompletion(result.name)
+                        Text("Looking for **\(result.name)**?").searchCompletion(result.name)
                     }
                 }
             }

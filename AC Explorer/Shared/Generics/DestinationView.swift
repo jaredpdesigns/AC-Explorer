@@ -16,23 +16,43 @@ struct DestinationView: View {
     @State var quote: String?
     @State var variationsQuery: [Query]?
     @State var itemsQuery: [Query]?
+    @State var buy: Buy?
+    
+    @State var showSheet = false
     
     var body: some View {
         if UIDevice.current.userInterfaceIdiom == .pad {
-            NavigationLink(destination: DetailView(image: image, imageSecondary: imageSecondary, title: title, subtitle: subtitle, subtitleImage: subtitleImage, quote: quote, variationsQuery: variationsQuery, itemsQuery: itemsQuery)) {
-                ListItem(image: image, title: title, subtitle: subtitle, subtitleImage: subtitleImage)
-            }.buttonStyle(PlainButtonStyle())
+            VStack {
+                ListItem(image: image, title: title, subtitle: subtitle, subtitleImage: subtitleImage).onTapGesture {
+                    showSheet.toggle()
+                }
+            }
+            .sheet(isPresented: $showSheet) {
+                VStack {
+                    HStack {
+                        VStack {
+                            Image(systemName: "xmark.circle.fill").onTapGesture {
+                                showSheet.toggle()
+                            }
+                            .opacity(0.25)
+                        }.padding()
+                        Spacer()
+                    }
+                    DetailView(image: image, imageSecondary: imageSecondary, title: title, subtitle: subtitle, subtitleImage: subtitleImage, quote: quote, variationsQuery: variationsQuery, itemsQuery: itemsQuery, buy: buy)
+                }
+                
+            }
         } else {
             if #available(iOS 15.0, *) {
                 ZStack(alignment: .leading) {
-                    NavigationLink(destination: DetailView(image: image, imageSecondary: imageSecondary, title: title, subtitle: subtitle, subtitleImage: subtitleImage, quote: quote, variationsQuery: variationsQuery, itemsQuery: itemsQuery)) {
+                    NavigationLink(destination: DetailView(image: image, imageSecondary: imageSecondary, title: title, subtitle: subtitle, subtitleImage: subtitleImage, quote: quote, variationsQuery: variationsQuery, itemsQuery: itemsQuery, buy: buy)) {
                         EmptyView()
                     }.opacity(0)
                     ListItem(image: image, title: title, subtitle: subtitle, subtitleImage: subtitleImage)
                 }.listRowSeparator(.hidden)
             } else {
                 ZStack(alignment: .leading) {
-                    NavigationLink(destination: DetailView(image: image, imageSecondary: imageSecondary, title: title, subtitle: subtitle, subtitleImage: subtitleImage, quote: quote, variationsQuery: variationsQuery, itemsQuery: itemsQuery)) {
+                    NavigationLink(destination: DetailView(image: image, imageSecondary: imageSecondary, title: title, subtitle: subtitle, subtitleImage: subtitleImage, quote: quote, variationsQuery: variationsQuery, itemsQuery: itemsQuery, buy: buy)) {
                         EmptyView()
                     }.opacity(0)
                     ListItem(image: image, title: title, subtitle: subtitle, subtitleImage: subtitleImage)

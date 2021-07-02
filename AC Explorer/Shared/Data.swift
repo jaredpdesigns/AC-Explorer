@@ -28,6 +28,12 @@ struct Animal: Codable, Hashable {
 struct Variations: Codable, Hashable {
     var name, category: String
     var variations: [VariationSingle]
+    var buy: [Buy]
+}
+
+struct Buy: Codable, Hashable {
+    var price: Int
+    var currency: String
 }
 
 struct VariationSingle: Codable, Hashable {
@@ -36,6 +42,7 @@ struct VariationSingle: Codable, Hashable {
 
 struct Item: Codable, Hashable {
     var name, category, image_url: String
+    var buy: [Buy]
 }
 
 struct Query: Codable {

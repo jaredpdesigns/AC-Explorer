@@ -18,6 +18,7 @@ struct DetailView: View {
     @State var variationsHolder: [QueryResultVariations] = []
     @State var itemsQuery: [Query]? = []
     @State var itemsHolder: [QueryResultItem] = []
+    @State var buy: Buy?
     
     var body: some View {
         VStack {
@@ -57,6 +58,20 @@ struct DetailView: View {
                             .clipShape(RoundedRectangle(cornerRadius: 16))
                             .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color(UIColor.systemFill), lineWidth: 4).opacity(0.25))
                         }
+                        if buy != nil {
+                            VStack {
+                                HStack {
+                                    Image(systemName: "cart")
+                                        .imageScale(.small)
+                                        .opacity(0.5)
+                                    Text("\(buy!.price) \(buy!.currency)")
+                                }
+                            }
+                            .padding()
+                            .frame(maxWidth: 480)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                            .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color(UIColor.systemFill), lineWidth: 4).opacity(0.25))
+                        }
                     }
                     if UIDevice.current.userInterfaceIdiom == .pad {
                         LazyVGrid(columns: [GridItem(.adaptive(minimum: 200))]) {
@@ -82,14 +97,14 @@ struct DetailView: View {
             }
             .frame(maxHeight: .infinity)
             .onAppear{
-                if variationsQuery != nil {
+                if variationsQuery != nil && variationsHolder.isEmpty  {
                     for item in variationsQuery! {
                         Api().getVariationsSingle(query: item.query){(response) in
                             self.variationsHolder.insert(QueryResultVariations(label: item.label, response: response), at: self.variationsHolder.endIndex)
                         }
                     }
                 }
-                if itemsQuery != nil {
+                if itemsQuery != nil && itemsHolder.isEmpty {
                     for item in itemsQuery! {
                         Api().getItemsSingle(query: item.query){(response) in
                             self.itemsHolder.insert(QueryResultItem(label: item.label, response: response), at: self.itemsHolder.endIndex)

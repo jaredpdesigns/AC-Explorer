@@ -15,21 +15,23 @@ struct ListItem: View {
     
     var body: some View {
         if UIDevice.current.userInterfaceIdiom == .pad {
-            VStack(spacing: 16) {
-                ImageLoader(url: image, size: 128)
-                VStack(spacing: 8) {
-                    Text(title)
-                        .font(.headline)
-                        .fontWeight(.bold)
-                    HStack {
-                        Image(systemName: subtitleImage)
-                            .imageScale(.small)
-                        Text(subtitle)
-                    }.opacity(0.5)
-                }.frame(maxWidth: .infinity)
+            ZStack {
+                Color(UIColor.systemBackground)
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                VStack(spacing: 16) {
+                    ImageLoader(url: image, size: 128)
+                    VStack(spacing: 8) {
+                        Text(title)
+                            .font(.headline)
+                            .fontWeight(.bold)
+                        HStack {
+                            Image(systemName: subtitleImage)
+                                .imageScale(.small)
+                            Text(subtitle)
+                        }.opacity(0.5)
+                    }
+                }.padding()
             }
-            .padding()
-            .frame(maxWidth: .infinity)
             .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color(UIColor.systemFill), lineWidth: 4).opacity(0.25))
         } else {
             HStack(spacing: 16) {
@@ -38,11 +40,12 @@ struct ListItem: View {
                     Text(title)
                         .font(.headline)
                         .fontWeight(.bold)
-                    HStack(alignment: .top) {
+                    HStack {
                         Image(systemName: subtitleImage)
                             .imageScale(.small)
-                            .offset(y: 2)
                         Text(subtitle)
+                            .lineLimit(1)
+                            .truncationMode(.tail)
                     }.opacity(0.5)
                 }
                 Spacer()

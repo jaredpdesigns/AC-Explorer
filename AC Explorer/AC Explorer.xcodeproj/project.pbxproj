@@ -248,8 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				BEA9CF5A268E7F25007DBA55 /* VillagersView.swift */,
-				BEA9CF5B268E7F25007DBA55 /* ClothingView.swift */,
 				BEA9CF5C268E7F25007DBA55 /* AnimalsView.swift */,
+				BEA9CF5B268E7F25007DBA55 /* ClothingView.swift */,
 				BEA9CF5D268E7F25007DBA55 /* ItemsView.swift */,
 			);
 			path = Views;
@@ -258,12 +258,12 @@
 		BEA9CF5E268E7F25007DBA55 /* Generics */ = {
 			isa = PBXGroup;
 			children = (
-				BEA9CF5F268E7F25007DBA55 /* ListItem.swift */,
-				BEA9CF60268E7F25007DBA55 /* DetailView.swift */,
-				BEA9CF61268E7F25007DBA55 /* ImageLoader.swift */,
-				BEA9CF62268E7F25007DBA55 /* ListView.swift */,
-				BEA9CF63268E7F25007DBA55 /* ExtraItem.swift */,
 				BEA9CF64268E7F25007DBA55 /* DestinationView.swift */,
+				BEA9CF60268E7F25007DBA55 /* DetailView.swift */,
+				BEA9CF63268E7F25007DBA55 /* ExtraItem.swift */,
+				BEA9CF61268E7F25007DBA55 /* ImageLoader.swift */,
+				BEA9CF5F268E7F25007DBA55 /* ListItem.swift */,
+				BEA9CF62268E7F25007DBA55 /* ListView.swift */,
 				BEA9CF65268E7F25007DBA55 /* Loader.swift */,
 			);
 			path = Generics;

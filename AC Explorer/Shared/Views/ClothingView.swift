@@ -34,7 +34,7 @@ struct ClothingView: View {
                     } else {
                         ListView {
                             ForEach(searchResults, id: \.self) { item in
-                                DestinationView(image: item.variations[0].image_url, title: item.name, subtitle: item.category, subtitleImage: "tag")
+                                DestinationView(image: item.variations[0].image_url, title: item.name, subtitle: item.category, subtitleImage: "tag", buy: item.buy.isEmpty ? nil:item.buy[0])
                             }
                         }
                     }
@@ -47,9 +47,9 @@ struct ClothingView: View {
                 }
             }
             .searchable(text: $query, prompt: "Search…") {
-                if query != "" {
+                if query != "" && UIDevice.current.userInterfaceIdiom == .phone {
                     ForEach(searchResults, id: \.self) { result in
-                        Text("\(result.name)?").searchCompletion(result.name)
+                        Text("Looking for **\(result.name)**?").searchCompletion(result.name)
                     }
                 }
             }
@@ -62,7 +62,7 @@ struct ClothingView: View {
                 } else {
                     ListView {
                         ForEach(arr, id: \.self) { item in
-                            DestinationView(image: item.variations[0].image_url, title: item.name, subtitle: item.category, subtitleImage: "tag")
+                            DestinationView(image: item.variations[0].image_url, title: item.name, subtitle: item.category, subtitleImage: "tag", buy: item.buy[0])
                         }
                     }
                 }

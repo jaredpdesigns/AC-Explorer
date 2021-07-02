@@ -55,7 +55,7 @@ struct ItemsView: View {
                         } else {
                             ListView {
                                 ForEach(searchResultsFurniture, id: \.self) { item in
-                                    DestinationView(image: item.variations[0].image_url, title: item.name, subtitle: item.category, subtitleImage: "tag")
+                                    DestinationView(image: item.variations[0].image_url, title: item.name, subtitle: item.category, subtitleImage: "tag", buy: item.buy.isEmpty ? nil:item.buy[0])
                                 }
                             }
                         }
@@ -76,7 +76,7 @@ struct ItemsView: View {
                         } else {
                             ListView {
                                 ForEach(searchResultsItems, id: \.self) { item in
-                                    DestinationView(image: item.image_url, title: item.name, subtitle: item.category, subtitleImage: "tag")
+                                    DestinationView(image: item.image_url, title: item.name, subtitle: item.category, subtitleImage: "tag", buy: item.buy.isEmpty ? nil:item.buy[0])
                                 }
                             }
                         }
@@ -93,15 +93,15 @@ struct ItemsView: View {
                 }
             }
             .searchable(text: $query, prompt: "Search…") {
-                if query != "" {
+                if query != "" && UIDevice.current.userInterfaceIdiom == .phone {
                     if selection == "Furniture" {
                         ForEach(searchResultsFurniture, id: \.self) { result in
-                            Text("\(result.name)?").searchCompletion(result.name)
+                            Text("Looking for **\(result.name)**?").searchCompletion(result.name)
                         }
                     }
                     if selection == "Interior Items" {
                         ForEach(searchResultsItems, id: \.self) { result in
-                            Text("\(result.name)?").searchCompletion(result.name)
+                            Text("Looking for **\(result.name)**?").searchCompletion(result.name)
                         }
                     }
                     

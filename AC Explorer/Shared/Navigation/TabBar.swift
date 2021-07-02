@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TabBar: View {
+    
     var body: some View {
         TabView {
             NavigationView {
@@ -38,6 +39,6 @@ struct TabBar: View {
             .tabItem {
                 Label("Home Items", systemImage: "house")
             }
-        }.edgesIgnoringSafeArea(.top)
+        }        
     }
 }
