@@ -1,0 +1,1072 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE1E8AD9268E85C400763E4A /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF65268E7F25007DBA55 /* Loader.swift */; };
+		BE1E8ADB268E86B400763E4A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E8ADA268E86B400763E4A /* ComplicationController.swift */; };
+		BEA9CF3D268E7DF2007DBA55 /* AC_ExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF2F268E7DF0007DBA55 /* AC_ExplorerApp.swift */; };
+		BEA9CF3E268E7DF2007DBA55 /* AC_ExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF2F268E7DF0007DBA55 /* AC_ExplorerApp.swift */; };
+		BEA9CF3F268E7DF2007DBA55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF30268E7DF0007DBA55 /* ContentView.swift */; };
+		BEA9CF40268E7DF2007DBA55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF30268E7DF0007DBA55 /* ContentView.swift */; };
+		BEA9CF41268E7DF2007DBA55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA9CF31268E7DF2007DBA55 /* Assets.xcassets */; };
+		BEA9CF42268E7DF2007DBA55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA9CF31268E7DF2007DBA55 /* Assets.xcassets */; };
+		BEA9CF54268E7EE6007DBA55 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF52268E7EE6007DBA55 /* TabBar.swift */; };
+		BEA9CF56268E7EE7007DBA55 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF53268E7EE6007DBA55 /* Sidebar.swift */; };
+		BEA9CF57268E7EE7007DBA55 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF53268E7EE6007DBA55 /* Sidebar.swift */; };
+		BEA9CF66268E7F25007DBA55 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF58268E7F25007DBA55 /* Data.swift */; };
+		BEA9CF67268E7F25007DBA55 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF58268E7F25007DBA55 /* Data.swift */; };
+		BEA9CF68268E7F25007DBA55 /* VillagersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5A268E7F25007DBA55 /* VillagersView.swift */; };
+		BEA9CF69268E7F25007DBA55 /* VillagersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5A268E7F25007DBA55 /* VillagersView.swift */; };
+		BEA9CF6A268E7F25007DBA55 /* ClothingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5B268E7F25007DBA55 /* ClothingView.swift */; };
+		BEA9CF6B268E7F25007DBA55 /* ClothingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5B268E7F25007DBA55 /* ClothingView.swift */; };
+		BEA9CF6C268E7F25007DBA55 /* AnimalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5C268E7F25007DBA55 /* AnimalsView.swift */; };
+		BEA9CF6D268E7F25007DBA55 /* AnimalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5C268E7F25007DBA55 /* AnimalsView.swift */; };
+		BEA9CF6E268E7F25007DBA55 /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5D268E7F25007DBA55 /* ItemsView.swift */; };
+		BEA9CF6F268E7F25007DBA55 /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5D268E7F25007DBA55 /* ItemsView.swift */; };
+		BEA9CF70268E7F25007DBA55 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5F268E7F25007DBA55 /* ListItem.swift */; };
+		BEA9CF71268E7F25007DBA55 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF5F268E7F25007DBA55 /* ListItem.swift */; };
+		BEA9CF72268E7F25007DBA55 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF60268E7F25007DBA55 /* DetailView.swift */; };
+		BEA9CF73268E7F25007DBA55 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF60268E7F25007DBA55 /* DetailView.swift */; };
+		BEA9CF74268E7F25007DBA55 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF61268E7F25007DBA55 /* ImageLoader.swift */; };
+		BEA9CF75268E7F25007DBA55 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF61268E7F25007DBA55 /* ImageLoader.swift */; };
+		BEA9CF76268E7F25007DBA55 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF62268E7F25007DBA55 /* ListView.swift */; };
+		BEA9CF77268E7F25007DBA55 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF62268E7F25007DBA55 /* ListView.swift */; };
+		BEA9CF78268E7F25007DBA55 /* ExtraItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF63268E7F25007DBA55 /* ExtraItem.swift */; };
+		BEA9CF79268E7F25007DBA55 /* ExtraItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF63268E7F25007DBA55 /* ExtraItem.swift */; };
+		BEA9CF7A268E7F25007DBA55 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF64268E7F25007DBA55 /* DestinationView.swift */; };
+		BEA9CF7B268E7F25007DBA55 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF64268E7F25007DBA55 /* DestinationView.swift */; };
+		BEA9CF7C268E7F25007DBA55 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF65268E7F25007DBA55 /* Loader.swift */; };
+		BEA9CF7D268E7F25007DBA55 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF65268E7F25007DBA55 /* Loader.swift */; };
+		BEA9CFA0268E8344007DBA55 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9CF9F268E8344007DBA55 /* WidgetKit.framework */; platformFilter = maccatalyst; };
+		BEA9CFA2268E8344007DBA55 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA9CFA1268E8344007DBA55 /* SwiftUI.framework */; platformFilter = maccatalyst; };
+		BEA9CFA5268E8344007DBA55 /* AC_Birthdays.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CFA4268E8344007DBA55 /* AC_Birthdays.swift */; };
+		BEA9CFA7268E8346007DBA55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA9CFA6268E8346007DBA55 /* Assets.xcassets */; };
+		BEA9CFAB268E8346007DBA55 /* AC BirthdaysExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BEA9CF9D268E8344007DBA55 /* AC BirthdaysExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BEA9CFB0268E83AB007DBA55 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF58268E7F25007DBA55 /* Data.swift */; };
+		BEA9CFB9268E8400007DBA55 /* Large.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CFB6268E8400007DBA55 /* Large.swift */; };
+		BEA9CFBA268E8400007DBA55 /* Small.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CFB7268E8400007DBA55 /* Small.swift */; };
+		BEA9CFBB268E8400007DBA55 /* Medium.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CFB8268E8400007DBA55 /* Medium.swift */; };
+		BEA9CFBC268E8411007DBA55 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF65268E7F25007DBA55 /* Loader.swift */; };
+		BEA9CFC2268E84B0007DBA55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA9CFC1268E84B0007DBA55 /* Assets.xcassets */; };
+		BEA9CFC8268E84B0007DBA55 /* AC Birthdays Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BEA9CFC7268E84B0007DBA55 /* AC Birthdays Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BEA9CFCD268E84B0007DBA55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CFCC268E84B0007DBA55 /* ContentView.swift */; };
+		BEA9CFCF268E84B0007DBA55 /* AC_ExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CFCE268E84B0007DBA55 /* AC_ExplorerApp.swift */; };
+		BEA9CFD6268E84B1007DBA55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA9CFD5268E84B1007DBA55 /* Preview Assets.xcassets */; };
+		BEA9CFDA268E84B1007DBA55 /* AC Birthdays Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BEA9CFBF268E84AE007DBA55 /* AC Birthdays Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BEA9CFE4268E851E007DBA55 /* VillagerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CFE3268E851E007DBA55 /* VillagerDetail.swift */; };
+		BEA9CFE5268E853F007DBA55 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF58268E7F25007DBA55 /* Data.swift */; };
+		BEA9CFE6268E8562007DBA55 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9CF61268E7F25007DBA55 /* ImageLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEA9CFA9268E8346007DBA55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEA9CF2A268E7DF0007DBA55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEA9CF9C268E8344007DBA55;
+			remoteInfo = "AC BirthdaysExtension";
+		};
+		BEA9CFC9268E84B0007DBA55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEA9CF2A268E7DF0007DBA55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEA9CFC6268E84B0007DBA55;
+			remoteInfo = "AC Birthdays Watch Extension";
+		};
+		BEA9CFD8268E84B1007DBA55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEA9CF2A268E7DF0007DBA55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEA9CFBE268E84AE007DBA55;
+			remoteInfo = "AC Birthdays Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BEA9CFAF268E8346007DBA55 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BEA9CFAB268E8346007DBA55 /* AC BirthdaysExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA9CFDE268E84B1007DBA55 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BEA9CFC8268E84B0007DBA55 /* AC Birthdays Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA9CFE2268E84B1007DBA55 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BEA9CFDA268E84B1007DBA55 /* AC Birthdays Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE1E8ADA268E86B400763E4A /* ComplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		BEA9CF2F268E7DF0007DBA55 /* AC_ExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AC_ExplorerApp.swift; sourceTree = "<group>"; };
+		BEA9CF30268E7DF0007DBA55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BEA9CF31268E7DF2007DBA55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEA9CF36268E7DF2007DBA55 /* AC Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA9CF3C268E7DF2007DBA55 /* AC Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA9CF52268E7EE6007DBA55 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		BEA9CF53268E7EE6007DBA55 /* Sidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		BEA9CF58268E7F25007DBA55 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		BEA9CF5A268E7F25007DBA55 /* VillagersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VillagersView.swift; sourceTree = "<group>"; };
+		BEA9CF5B268E7F25007DBA55 /* ClothingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingView.swift; sourceTree = "<group>"; };
+		BEA9CF5C268E7F25007DBA55 /* AnimalsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsView.swift; sourceTree = "<group>"; };
+		BEA9CF5D268E7F25007DBA55 /* ItemsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
+		BEA9CF5F268E7F25007DBA55 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		BEA9CF60268E7F25007DBA55 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		BEA9CF61268E7F25007DBA55 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		BEA9CF62268E7F25007DBA55 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		BEA9CF63268E7F25007DBA55 /* ExtraItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraItem.swift; sourceTree = "<group>"; };
+		BEA9CF64268E7F25007DBA55 /* DestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
+		BEA9CF65268E7F25007DBA55 /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		BEA9CF9D268E8344007DBA55 /* AC BirthdaysExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AC BirthdaysExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA9CF9F268E8344007DBA55 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BEA9CFA1268E8344007DBA55 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BEA9CFA4268E8344007DBA55 /* AC_Birthdays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AC_Birthdays.swift; sourceTree = "<group>"; };
+		BEA9CFA6268E8346007DBA55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEA9CFA8268E8346007DBA55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA9CFB6268E8400007DBA55 /* Large.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Large.swift; sourceTree = "<group>"; };
+		BEA9CFB7268E8400007DBA55 /* Small.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Small.swift; sourceTree = "<group>"; };
+		BEA9CFB8268E8400007DBA55 /* Medium.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medium.swift; sourceTree = "<group>"; };
+		BEA9CFBF268E84AE007DBA55 /* AC Birthdays Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC Birthdays Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA9CFC1268E84B0007DBA55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEA9CFC7268E84B0007DBA55 /* AC Birthdays Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AC Birthdays Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA9CFCC268E84B0007DBA55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BEA9CFCE268E84B0007DBA55 /* AC_ExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AC_ExplorerApp.swift; sourceTree = "<group>"; };
+		BEA9CFD5268E84B1007DBA55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BEA9CFD7268E84B1007DBA55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA9CFE3268E851E007DBA55 /* VillagerDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VillagerDetail.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEA9CF33268E7DF2007DBA55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA9CF39268E7DF2007DBA55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA9CF9A268E8344007DBA55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA9CFA2268E8344007DBA55 /* SwiftUI.framework in Frameworks */,
+				BEA9CFA0268E8344007DBA55 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA9CFC4268E84B0007DBA55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEA9CF29268E7DF0007DBA55 = {
+			isa = PBXGroup;
+			children = (
+				BEA9CF2E268E7DF0007DBA55 /* Shared */,
+				BEA9CFA3268E8344007DBA55 /* AC Birthdays */,
+				BEA9CFC0268E84AE007DBA55 /* AC Birthdays Watch */,
+				BEA9CFCB268E84B0007DBA55 /* AC Birthdays Watch Extension */,
+				BEA9CF9E268E8344007DBA55 /* Frameworks */,
+				BEA9CF37268E7DF2007DBA55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEA9CF2E268E7DF0007DBA55 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BEA9CF2F268E7DF0007DBA55 /* AC_ExplorerApp.swift */,
+				BEA9CF30268E7DF0007DBA55 /* ContentView.swift */,
+				BEA9CF58268E7F25007DBA55 /* Data.swift */,
+				BEA9CF5E268E7F25007DBA55 /* Generics */,
+				BEA9CF59268E7F25007DBA55 /* Views */,
+				BEA9CF51268E7EE6007DBA55 /* Navigation */,
+				BEA9CF31268E7DF2007DBA55 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BEA9CF37268E7DF2007DBA55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEA9CF36268E7DF2007DBA55 /* AC Explorer.app */,
+				BEA9CF3C268E7DF2007DBA55 /* AC Explorer.app */,
+				BEA9CF9D268E8344007DBA55 /* AC BirthdaysExtension.appex */,
+				BEA9CFBF268E84AE007DBA55 /* AC Birthdays Watch.app */,
+				BEA9CFC7268E84B0007DBA55 /* AC Birthdays Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEA9CF51268E7EE6007DBA55 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				BEA9CF52268E7EE6007DBA55 /* TabBar.swift */,
+				BEA9CF53268E7EE6007DBA55 /* Sidebar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		BEA9CF59268E7F25007DBA55 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEA9CF5A268E7F25007DBA55 /* VillagersView.swift */,
+				BEA9CF5B268E7F25007DBA55 /* ClothingView.swift */,
+				BEA9CF5C268E7F25007DBA55 /* AnimalsView.swift */,
+				BEA9CF5D268E7F25007DBA55 /* ItemsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BEA9CF5E268E7F25007DBA55 /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				BEA9CF5F268E7F25007DBA55 /* ListItem.swift */,
+				BEA9CF60268E7F25007DBA55 /* DetailView.swift */,
+				BEA9CF61268E7F25007DBA55 /* ImageLoader.swift */,
+				BEA9CF62268E7F25007DBA55 /* ListView.swift */,
+				BEA9CF63268E7F25007DBA55 /* ExtraItem.swift */,
+				BEA9CF64268E7F25007DBA55 /* DestinationView.swift */,
+				BEA9CF65268E7F25007DBA55 /* Loader.swift */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
+		BEA9CF9E268E8344007DBA55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEA9CF9F268E8344007DBA55 /* WidgetKit.framework */,
+				BEA9CFA1268E8344007DBA55 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEA9CFA3268E8344007DBA55 /* AC Birthdays */ = {
+			isa = PBXGroup;
+			children = (
+				BEA9CFA4268E8344007DBA55 /* AC_Birthdays.swift */,
+				BEA9CFB5268E8400007DBA55 /* Views */,
+				BEA9CFA6268E8346007DBA55 /* Assets.xcassets */,
+				BEA9CFA8268E8346007DBA55 /* Info.plist */,
+			);
+			path = "AC Birthdays";
+			sourceTree = "<group>";
+		};
+		BEA9CFB5268E8400007DBA55 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEA9CFB6268E8400007DBA55 /* Large.swift */,
+				BEA9CFB7268E8400007DBA55 /* Small.swift */,
+				BEA9CFB8268E8400007DBA55 /* Medium.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BEA9CFC0268E84AE007DBA55 /* AC Birthdays Watch */ = {
+			isa = PBXGroup;
+			children = (
+				BEA9CFC1268E84B0007DBA55 /* Assets.xcassets */,
+			);
+			path = "AC Birthdays Watch";
+			sourceTree = "<group>";
+		};
+		BEA9CFCB268E84B0007DBA55 /* AC Birthdays Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BEA9CFCE268E84B0007DBA55 /* AC_ExplorerApp.swift */,
+				BEA9CFCC268E84B0007DBA55 /* ContentView.swift */,
+				BEA9CFE3268E851E007DBA55 /* VillagerDetail.swift */,
+				BE1E8ADA268E86B400763E4A /* ComplicationController.swift */,
+				BEA9CFD7268E84B1007DBA55 /* Info.plist */,
+				BEA9CFD4268E84B1007DBA55 /* Preview Content */,
+			);
+			path = "AC Birthdays Watch Extension";
+			sourceTree = "<group>";
+		};
+		BEA9CFD4268E84B1007DBA55 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BEA9CFD5268E84B1007DBA55 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEA9CF35268E7DF2007DBA55 /* AC Explorer (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEA9CF45268E7DF2007DBA55 /* Build configuration list for PBXNativeTarget "AC Explorer (iOS)" */;
+			buildPhases = (
+				BEA9CF32268E7DF2007DBA55 /* Sources */,
+				BEA9CF33268E7DF2007DBA55 /* Frameworks */,
+				BEA9CF34268E7DF2007DBA55 /* Resources */,
+				BEA9CFAF268E8346007DBA55 /* Embed App Extensions */,
+				BEA9CFE2268E84B1007DBA55 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEA9CFAA268E8346007DBA55 /* PBXTargetDependency */,
+				BEA9CFD9268E84B1007DBA55 /* PBXTargetDependency */,
+			);
+			name = "AC Explorer (iOS)";
+			productName = "AC Explorer (iOS)";
+			productReference = BEA9CF36268E7DF2007DBA55 /* AC Explorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEA9CF3B268E7DF2007DBA55 /* AC Explorer (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEA9CF48268E7DF2007DBA55 /* Build configuration list for PBXNativeTarget "AC Explorer (macOS)" */;
+			buildPhases = (
+				BEA9CF38268E7DF2007DBA55 /* Sources */,
+				BEA9CF39268E7DF2007DBA55 /* Frameworks */,
+				BEA9CF3A268E7DF2007DBA55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AC Explorer (macOS)";
+			productName = "AC Explorer (macOS)";
+			productReference = BEA9CF3C268E7DF2007DBA55 /* AC Explorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEA9CF9C268E8344007DBA55 /* AC BirthdaysExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEA9CFAC268E8346007DBA55 /* Build configuration list for PBXNativeTarget "AC BirthdaysExtension" */;
+			buildPhases = (
+				BEA9CF99268E8344007DBA55 /* Sources */,
+				BEA9CF9A268E8344007DBA55 /* Frameworks */,
+				BEA9CF9B268E8344007DBA55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AC BirthdaysExtension";
+			productName = "AC BirthdaysExtension";
+			productReference = BEA9CF9D268E8344007DBA55 /* AC BirthdaysExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BEA9CFBE268E84AE007DBA55 /* AC Birthdays Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEA9CFDF268E84B1007DBA55 /* Build configuration list for PBXNativeTarget "AC Birthdays Watch" */;
+			buildPhases = (
+				BEA9CFBD268E84AE007DBA55 /* Resources */,
+				BEA9CFDE268E84B1007DBA55 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEA9CFCA268E84B0007DBA55 /* PBXTargetDependency */,
+			);
+			name = "AC Birthdays Watch";
+			productName = "AC Birthdays Watch";
+			productReference = BEA9CFBF268E84AE007DBA55 /* AC Birthdays Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BEA9CFC6268E84B0007DBA55 /* AC Birthdays Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEA9CFDB268E84B1007DBA55 /* Build configuration list for PBXNativeTarget "AC Birthdays Watch Extension" */;
+			buildPhases = (
+				BEA9CFC3268E84B0007DBA55 /* Sources */,
+				BEA9CFC4268E84B0007DBA55 /* Frameworks */,
+				BEA9CFC5268E84B0007DBA55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AC Birthdays Watch Extension";
+			productName = "AC Birthdays Watch Extension";
+			productReference = BEA9CFC7268E84B0007DBA55 /* AC Birthdays Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEA9CF2A268E7DF0007DBA55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					BEA9CF35268E7DF2007DBA55 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					BEA9CF3B268E7DF2007DBA55 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					BEA9CF9C268E8344007DBA55 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					BEA9CFBE268E84AE007DBA55 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					BEA9CFC6268E84B0007DBA55 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = BEA9CF2D268E7DF0007DBA55 /* Build configuration list for PBXProject "AC Explorer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEA9CF29268E7DF0007DBA55;
+			productRefGroup = BEA9CF37268E7DF2007DBA55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEA9CF35268E7DF2007DBA55 /* AC Explorer (iOS) */,
+				BEA9CF3B268E7DF2007DBA55 /* AC Explorer (macOS) */,
+				BEA9CF9C268E8344007DBA55 /* AC BirthdaysExtension */,
+				BEA9CFBE268E84AE007DBA55 /* AC Birthdays Watch */,
+				BEA9CFC6268E84B0007DBA55 /* AC Birthdays Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEA9CF34268E7DF2007DBA55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA9CF41268E7DF2007DBA55 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA9CF3A268E7DF2007DBA55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA9CF42268E7DF2007DBA55 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA9CF9B268E8344007DBA55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA9CFA7268E8346007DBA55 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA9CFBD268E84AE007DBA55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA9CFC2268E84B0007DBA55 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA9CFC5268E84B0007DBA55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA9CFD6268E84B1007DBA55 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEA9CF32268E7DF2007DBA55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA9CF70268E7F25007DBA55 /* ListItem.swift in Sources */,
+				BEA9CF78268E7F25007DBA55 /* ExtraItem.swift in Sources */,
+				BEA9CF76268E7F25007DBA55 /* ListView.swift in Sources */,
+				BEA9CF54268E7EE6007DBA55 /* TabBar.swift in Sources */,
+				BEA9CF74268E7F25007DBA55 /* ImageLoader.swift in Sources */,
+				BEA9CF6E268E7F25007DBA55 /* ItemsView.swift in Sources */,
+				BEA9CF66268E7F25007DBA55 /* Data.swift in Sources */,
+				BEA9CF3F268E7DF2007DBA55 /* ContentView.swift in Sources */,
+				BEA9CF72268E7F25007DBA55 /* DetailView.swift in Sources */,
+				BEA9CF56268E7EE7007DBA55 /* Sidebar.swift in Sources */,
+				BEA9CF6C268E7F25007DBA55 /* AnimalsView.swift in Sources */,
+				BEA9CF68268E7F25007DBA55 /* VillagersView.swift in Sources */,
+				BEA9CF7A268E7F25007DBA55 /* DestinationView.swift in Sources */,
+				BEA9CF3D268E7DF2007DBA55 /* AC_ExplorerApp.swift in Sources */,
+				BEA9CF7C268E7F25007DBA55 /* Loader.swift in Sources */,
+				BEA9CF6A268E7F25007DBA55 /* ClothingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA9CF38268E7DF2007DBA55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA9CF71268E7F25007DBA55 /* ListItem.swift in Sources */,
+				BEA9CF79268E7F25007DBA55 /* ExtraItem.swift in Sources */,
+				BEA9CF77268E7F25007DBA55 /* ListView.swift in Sources */,
+				BEA9CF75268E7F25007DBA55 /* ImageLoader.swift in Sources */,
+				BEA9CF6F268E7F25007DBA55 /* ItemsView.swift in Sources */,
+				BEA9CF67268E7F25007DBA55 /* Data.swift in Sources */,
+				BEA9CF40268E7DF2007DBA55 /* ContentView.swift in Sources */,
+				BEA9CF73268E7F25007DBA55 /* DetailView.swift in Sources */,
+				BEA9CF57268E7EE7007DBA55 /* Sidebar.swift in Sources */,
+				BEA9CF6D268E7F25007DBA55 /* AnimalsView.swift in Sources */,
+				BEA9CF69268E7F25007DBA55 /* VillagersView.swift in Sources */,
+				BEA9CF7B268E7F25007DBA55 /* DestinationView.swift in Sources */,
+				BEA9CF3E268E7DF2007DBA55 /* AC_ExplorerApp.swift in Sources */,
+				BEA9CF7D268E7F25007DBA55 /* Loader.swift in Sources */,
+				BEA9CF6B268E7F25007DBA55 /* ClothingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA9CF99268E8344007DBA55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA9CFA5268E8344007DBA55 /* AC_Birthdays.swift in Sources */,
+				BEA9CFB9268E8400007DBA55 /* Large.swift in Sources */,
+				BEA9CFBC268E8411007DBA55 /* Loader.swift in Sources */,
+				BEA9CFB0268E83AB007DBA55 /* Data.swift in Sources */,
+				BEA9CFBA268E8400007DBA55 /* Small.swift in Sources */,
+				BEA9CFBB268E8400007DBA55 /* Medium.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA9CFC3268E84B0007DBA55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA9CFE4268E851E007DBA55 /* VillagerDetail.swift in Sources */,
+				BEA9CFCF268E84B0007DBA55 /* AC_ExplorerApp.swift in Sources */,
+				BEA9CFE6268E8562007DBA55 /* ImageLoader.swift in Sources */,
+				BEA9CFCD268E84B0007DBA55 /* ContentView.swift in Sources */,
+				BE1E8ADB268E86B400763E4A /* ComplicationController.swift in Sources */,
+				BEA9CFE5268E853F007DBA55 /* Data.swift in Sources */,
+				BE1E8AD9268E85C400763E4A /* Loader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEA9CFAA268E8346007DBA55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEA9CF9C268E8344007DBA55 /* AC BirthdaysExtension */;
+			targetProxy = BEA9CFA9268E8346007DBA55 /* PBXContainerItemProxy */;
+		};
+		BEA9CFCA268E84B0007DBA55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEA9CFC6268E84B0007DBA55 /* AC Birthdays Watch Extension */;
+			targetProxy = BEA9CFC9268E84B0007DBA55 /* PBXContainerItemProxy */;
+		};
+		BEA9CFD9268E84B1007DBA55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEA9CFBE268E84AE007DBA55 /* AC Birthdays Watch */;
+			targetProxy = BEA9CFD8268E84B1007DBA55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BEA9CF43268E7DF2007DBA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEA9CF44268E7DF2007DBA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BEA9CF46268E7DF2007DBA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaredpdesigns.AC-Explorer";
+				PRODUCT_NAME = "AC Explorer";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEA9CF47268E7DF2007DBA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaredpdesigns.AC-Explorer";
+				PRODUCT_NAME = "AC Explorer";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEA9CF49268E7DF2007DBA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaredpdesigns.AC-Explorer";
+				PRODUCT_NAME = "AC Explorer";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BEA9CF4A268E7DF2007DBA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaredpdesigns.AC-Explorer";
+				PRODUCT_NAME = "AC Explorer";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BEA9CFAD268E8346007DBA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AC Birthdays/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AC Birthdays";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaredpdesigns.AC-Explorer.AC-Birthdays";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEA9CFAE268E8346007DBA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AC Birthdays/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AC Birthdays";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaredpdesigns.AC-Explorer.AC-Birthdays";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEA9CFDC268E84B1007DBA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AC Birthdays Watch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AC Birthdays Watch Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AC Birthdays Watch Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaredpdesigns.AC-Explorer.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		BEA9CFDD268E84B1007DBA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AC Birthdays Watch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AC Birthdays Watch Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AC Birthdays Watch Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaredpdesigns.AC-Explorer.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		BEA9CFE0268E84B1007DBA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = AC_Birthdays_Watch_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "AC Birthdays Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.jaredpdesigns.AC-Explorer";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaredpdesigns.AC-Explorer.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		BEA9CFE1268E84B1007DBA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = AC_Birthdays_Watch_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "AC Birthdays Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.jaredpdesigns.AC-Explorer";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaredpdesigns.AC-Explorer.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEA9CF2D268E7DF0007DBA55 /* Build configuration list for PBXProject "AC Explorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA9CF43268E7DF2007DBA55 /* Debug */,
+				BEA9CF44268E7DF2007DBA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEA9CF45268E7DF2007DBA55 /* Build configuration list for PBXNativeTarget "AC Explorer (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA9CF46268E7DF2007DBA55 /* Debug */,
+				BEA9CF47268E7DF2007DBA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEA9CF48268E7DF2007DBA55 /* Build configuration list for PBXNativeTarget "AC Explorer (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA9CF49268E7DF2007DBA55 /* Debug */,
+				BEA9CF4A268E7DF2007DBA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEA9CFAC268E8346007DBA55 /* Build configuration list for PBXNativeTarget "AC BirthdaysExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA9CFAD268E8346007DBA55 /* Debug */,
+				BEA9CFAE268E8346007DBA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEA9CFDB268E84B1007DBA55 /* Build configuration list for PBXNativeTarget "AC Birthdays Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA9CFDC268E84B1007DBA55 /* Debug */,
+				BEA9CFDD268E84B1007DBA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEA9CFDF268E84B1007DBA55 /* Build configuration list for PBXNativeTarget "AC Birthdays Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA9CFE0268E84B1007DBA55 /* Debug */,
+				BEA9CFE1268E84B1007DBA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEA9CF2A268E7DF0007DBA55 /* Project object */;
+}
