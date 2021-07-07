@@ -34,7 +34,7 @@ struct ClothingView: View {
                     } else {
                         ListView {
                             ForEach(searchResults, id: \.self) { item in
-                                DestinationView(image: item.variations[0].image_url, title: item.name, subtitle: item.category, subtitleImage: "tag", buy: item.buy.isEmpty ? nil:item.buy[0])
+                                DestinationView(image: item.variations[0].image_url, title: item.name, subtitle: item.category, subtitleImage: "tag",  availability: item.availability.isEmpty ? nil:item.availability[0], buy: item.buy.isEmpty ? nil:item.buy[0])
                             }
                         }
                     }
@@ -62,7 +62,7 @@ struct ClothingView: View {
                 } else {
                     ListView {
                         ForEach(arr, id: \.self) { item in
-                            DestinationView(image: item.variations[0].image_url, title: item.name, subtitle: item.category, subtitleImage: "tag", buy: item.buy[0])
+                            DestinationView(image: item.variations[0].image_url, title: item.name, subtitle: item.category, subtitleImage: "tag", availability: item.availability.isEmpty ? nil:item.availability[0], buy: item.buy.isEmpty ? nil:item.buy[0])
                         }
                     }
                 }

@@ -18,7 +18,10 @@ struct DetailView: View {
     @State var variationsHolder: [QueryResultVariations] = []
     @State var itemsQuery: [Query]? = []
     @State var itemsHolder: [QueryResultItem] = []
+    @State var availability: Availability?
     @State var buy: Buy?
+    
+    @State var isAnimating: Bool = false
     
     var body: some View {
         VStack {
@@ -28,7 +31,22 @@ struct DetailView: View {
                         if imageSecondary != nil {
                             ImageLoader(url: imageSecondary!, size: 200)
                         }
-                        ImageLoader(url: image, size: 240)
+                        VStack {
+                            ImageLoader(url: image, size: 240)
+                        }
+                        .scaleEffect(isAnimating ? 1.125:1)
+                        .onTapGesture {
+                            DispatchQueue.main.async {
+                                withAnimation(.spring()){
+                                    self.isAnimating.toggle()
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                                        withAnimation(.spring()){
+                                            self.isAnimating.toggle()
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                     VStack(spacing: 32) {
                         VStack(spacing: 8) {
@@ -59,7 +77,10 @@ struct DetailView: View {
                                     Image(systemName: "cart")
                                         .imageScale(.small)
                                         .opacity(0.5)
-                                    Text("\(buy!.price) \(buy!.currency)")
+                                    Text("**\(buy!.price) \(buy!.currency)**")
+                                    if availability != nil {
+                                        Text("from _\(availability!.from)_")
+                                    }
                                 }
                             }
                             .padding()

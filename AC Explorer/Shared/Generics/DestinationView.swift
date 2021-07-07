@@ -16,6 +16,7 @@ struct DestinationView: View {
     @State var quote: String?
     @State var variationsQuery: [Query]?
     @State var itemsQuery: [Query]?
+    @State var availability: Availability?
     @State var buy: Buy?
     
     @State var isShowingSheet = false
@@ -43,20 +44,20 @@ struct DestinationView: View {
                         .opacity(0.5)
                         Spacer()
                     }
-                    DetailView(image: image, imageSecondary: imageSecondary, title: title, subtitle: subtitle, subtitleImage: subtitleImage, quote: quote, variationsQuery: variationsQuery, itemsQuery: itemsQuery, buy: buy)
+                    DetailView(image: image, imageSecondary: imageSecondary, title: title, subtitle: subtitle, subtitleImage: subtitleImage, quote: quote, variationsQuery: variationsQuery, itemsQuery: itemsQuery, availability: availability, buy: buy)
                 }
             }
         } else {
             if #available(iOS 15.0, *) {
                 ZStack(alignment: .leading) {
-                    NavigationLink(destination: DetailView(image: image, imageSecondary: imageSecondary, title: title, subtitle: subtitle, subtitleImage: subtitleImage, quote: quote, variationsQuery: variationsQuery, itemsQuery: itemsQuery, buy: buy)) {
+                    NavigationLink(destination: DetailView(image: image, imageSecondary: imageSecondary, title: title, subtitle: subtitle, subtitleImage: subtitleImage, quote: quote, variationsQuery: variationsQuery, itemsQuery: itemsQuery, availability: availability, buy: buy)) {
                         EmptyView()
                     }.opacity(0)
                     ListItem(image: image, title: title, subtitle: subtitle, subtitleImage: subtitleImage)
                 }.listRowSeparator(.hidden)
             } else {
                 ZStack(alignment: .leading) {
-                    NavigationLink(destination: DetailView(image: image, imageSecondary: imageSecondary, title: title, subtitle: subtitle, subtitleImage: subtitleImage, quote: quote, variationsQuery: variationsQuery, itemsQuery: itemsQuery, buy: buy)) {
+                    NavigationLink(destination: DetailView(image: image, imageSecondary: imageSecondary, title: title, subtitle: subtitle, subtitleImage: subtitleImage, quote: quote, variationsQuery: variationsQuery, itemsQuery: itemsQuery, availability: availability, buy: buy)) {
                         EmptyView()
                     }.opacity(0)
                     ListItem(image: image, title: title, subtitle: subtitle, subtitleImage: subtitleImage)

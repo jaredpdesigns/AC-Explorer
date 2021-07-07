@@ -28,7 +28,12 @@ struct Animal: Codable, Hashable {
 struct Variations: Codable, Hashable {
     var name, category: String
     var variations: [VariationSingle]
+    var availability: [Availability]
     var buy: [Buy]
+}
+
+struct Availability: Codable, Hashable {
+    var from: String
 }
 
 struct Buy: Codable, Hashable {
@@ -42,6 +47,7 @@ struct VariationSingle: Codable, Hashable {
 
 struct Item: Codable, Hashable {
     var name, category, image_url: String
+    var availability: [Availability]
     var buy: [Buy]
 }
 
@@ -192,6 +198,7 @@ class Api {
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             do {
                 let results = try JSONDecoder().decode([Variations].self, from: data!)
+
                 DispatchQueue.main.async {
                     completion(results)
                 }

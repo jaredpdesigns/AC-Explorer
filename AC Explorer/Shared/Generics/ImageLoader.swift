@@ -13,16 +13,22 @@ struct ImageLoader: View {
     
     var body: some View {
         if #available(iOS 15.0, *) {
-            AsyncImage(url: URL(string: url)) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: size, height: size)
-            } placeholder: {
-                VStack {
+            AsyncImage(url: URL(string: url)) { phase in
+                switch phase {
+                case .empty:
                     Loader()
-                }.frame(width: size, height: size)
+                case .success(let image):
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: size, height: size)
+                case .failure:
+                    Loader()
+                @unknown default:
+                    Loader()
+                }
             }
+            
         } else {
             if let url = URL(string: url), let imageData = try? Data(contentsOf: url),
                let uiImage = UIImage(data: imageData) {
