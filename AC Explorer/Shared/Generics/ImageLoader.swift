@@ -13,7 +13,10 @@ struct ImageLoader: View {
     
     var body: some View {
         if #available(iOS 15.0, *) {
-            AsyncImage(url: URL(string: url)) { phase in
+            AsyncImage(
+                url: URL(string: url),
+                transaction: Transaction(animation: .spring())
+            ) { phase in
                 switch phase {
                 case .empty:
                     Loader()
@@ -21,13 +24,14 @@ struct ImageLoader: View {
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: size, height: size)
+                        .transition(.scale(scale: 0.88, anchor: .center))
                 case .failure:
                     Loader()
                 @unknown default:
-                    Loader()
+                    EmptyView()
                 }
             }
+            .frame(width: size, height: size)
             
         } else {
             if let url = URL(string: url), let imageData = try? Data(contentsOf: url),
